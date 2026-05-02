@@ -1,0 +1,1634 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MyHealthPilot | AI Health Research Agent, Symptom Journal & Monitoring App</title>
+  <meta name="description" content="MyHealthPilot is an AI health research agent that helps you research symptom topics, understand PubMed and NICE-style sources in plain English, create reports, and monitor patterns over time. Built for organisation, not diagnosis." />
+  <meta name="keywords" content="AI health app, health journal app, symptom journal app, symptom tracker app, health notes app, GP appointment notes, symptom tracking, symptom organisation, PubMed health research, health research summaries, plain-English health research, AI symptom monitoring" />
+  <meta name="robots" content="index,follow" />
+  <meta name="theme-color" content="#eef6f8" />
+  <!-- Update canonical URL before production if the final domain changes. -->
+  <link rel="canonical" href="https://www.myhealthpilot.com/" />
+  <!-- Add favicon files here when available. -->
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="MyHealthPilot" />
+  <meta property="og:title" content="MyHealthPilot | AI Health Research Agent, Symptom Journal & Monitoring App" />
+  <meta property="og:description" content="Use an AI health research agent to research symptom topics, understand source-backed summaries, create reports, and monitor patterns over time. Built for organisation, not diagnosis." />
+  <meta property="og:url" content="https://www.myhealthpilot.com/" />
+  <!-- Add a real social preview image here. -->
+  <meta property="og:image" content="https://www.myhealthpilot.com/social-preview.png" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="MyHealthPilot | AI Health Research Agent, Symptom Journal & Monitoring App" />
+  <meta name="twitter:description" content="Use an AI health research agent to organise health notes, understand source-backed research summaries, create reports, and monitor patterns over time." />
+  <!-- Add a real social preview image here. -->
+  <meta name="twitter:image" content="https://www.myhealthpilot.com/social-preview.png" />
+
+  <script>
+    if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      document.documentElement.classList.add("motion-ready");
+    }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://www.myhealthpilot.com/#organization",
+        "name": "MyHealthPilot",
+        "url": "https://www.myhealthpilot.com/",
+        "description": "MyHealthPilot is a consumer health organisation app that uses AI to help users organise symptom notes, translate research sources into plain English, create reports, and monitor patterns over time.",
+        "sameAs": ["https://apps.apple.com/app/myhealthpilot/id6762011742"]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.myhealthpilot.com/#website",
+        "name": "MyHealthPilot",
+        "url": "https://www.myhealthpilot.com/",
+        "publisher": {"@id": "https://www.myhealthpilot.com/#organization"},
+        "description": "MyHealthPilot helps people organise symptoms, research health topics with visible sources, track patterns, save health reports, and understand health research in plain English."
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://www.myhealthpilot.com/#app",
+        "name": "MyHealthPilot",
+        "applicationCategory": "HealthApplication",
+        "operatingSystem": "iOS",
+        "url": "https://www.myhealthpilot.com/",
+        "downloadUrl": "https://apps.apple.com/app/myhealthpilot/id6762011742",
+        "offers": {"@type": "Offer", "price": "0", "priceCurrency": "GBP"},
+        "description": "MyHealthPilot is an AI health research agent that helps users research symptom or condition topics, understand PubMed and NICE-style sources in plain English, create clinician-ready reports, and monitor self-entered patterns over time. It does not diagnose, treat, triage emergencies, or replace professional medical care.",
+        "featureList": [
+          "AI health research agent",
+          "AI-assisted research translation",
+          "PubMed and NICE-style visible source links",
+          "Structured symptom notes",
+          "Guided health journaling",
+          "AI-assisted symptom monitoring plans",
+          "Clinician-ready saved health reports",
+          "Plain-English research summaries",
+          "Visible source links where research-backed information is used",
+          "Appointment preparation notes"
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.myhealthpilot.com/#faq",
+        "mainEntity": [
+          {"@type": "Question", "name": "What is MyHealthPilot?", "acceptedAnswer": {"@type": "Answer", "text": "MyHealthPilot is an AI health research agent that helps people turn confusing symptoms into structured notes, source-backed research summaries, monitoring plans, and reports for clinician discussions."}},
+          {"@type": "Question", "name": "Is MyHealthPilot a symptom checker?", "acceptedAnswer": {"@type": "Answer", "text": "MyHealthPilot is not positioned as a diagnostic symptom checker. It supports symptom journaling, symptom tracking, saved reports, research translation, and appointment preparation."}},
+          {"@type": "Question", "name": "Does MyHealthPilot diagnose symptoms?", "acceptedAnswer": {"@type": "Answer", "text": "No. MyHealthPilot does not diagnose conditions, provide treatment decisions, triage emergencies, or replace professional medical care."}},
+          {"@type": "Question", "name": "Can MyHealthPilot help before a GP appointment?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. MyHealthPilot can help people organise health concerns, research relevant context, track patterns over time, and prepare clearer reports before speaking to a GP or other qualified professional."}},
+          {"@type": "Question", "name": "What can I track in MyHealthPilot?", "acceptedAnswer": {"@type": "Answer", "text": "Users can track self-entered notes such as severity, duration, frequency, triggers, relieving factors, sleep, activity, medication use, impact on daily activities, related symptoms, and changes over time."}},
+          {"@type": "Question", "name": "Does MyHealthPilot provide medical advice?", "acceptedAnswer": {"@type": "Answer", "text": "MyHealthPilot provides AI-assisted organisation, journaling, monitoring, and research translation support. Diagnosis, treatment, and medical decisions should be discussed with a qualified professional."}},
+          {"@type": "Question", "name": "How does MyHealthPilot use research sources?", "acceptedAnswer": {"@type": "Answer", "text": "Where research-backed information is used, MyHealthPilot may research the symptom or condition topic and show visible source links such as PubMed or NICE-style guidance so users can review the context."}},
+          {"@type": "Question", "name": "Is MyHealthPilot free?", "acceptedAnswer": {"@type": "Answer", "text": "MyHealthPilot is currently available to download. Future features or access options may change."}},
+          {"@type": "Question", "name": "Who is MyHealthPilot for?", "acceptedAnswer": {"@type": "Answer", "text": "MyHealthPilot is for people who want a calmer AI-supported way to organise symptoms, track patterns, save health notes, understand research context, and prepare for conversations with health professionals."}},
+          {"@type": "Question", "name": "What should I do in an emergency?", "acceptedAnswer": {"@type": "Answer", "text": "Do not rely on MyHealthPilot in an emergency. Contact local emergency services or seek urgent professional medical help for urgent, severe, or rapidly worsening symptoms."}}
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.myhealthpilot.com/#breadcrumb",
+        "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Product", "item": "https://www.myhealthpilot.com/"}]
+      }
+    ]
+  }
+  </script>
+
+  <!-- Add analytics and Search Console verification here later. -->
+  <style>
+    :root {
+      --bg: #eef6f8;
+      --bg-soft: #f8fcfd;
+      --surface: rgba(255, 255, 255, 0.88);
+      --surface-strong: #ffffff;
+      --line: rgba(36, 94, 96, 0.12);
+      --line-strong: rgba(36, 94, 96, 0.22);
+      --text: #12303a;
+      --text-soft: #55707a;
+      --text-muted: #6f8790;
+      --accent: #3d9a97;
+      --accent-deep: #287a78;
+      --accent-soft: rgba(61, 154, 151, 0.12);
+      --shadow: 0 18px 60px rgba(24, 64, 72, 0.10);
+      --shadow-soft: 0 10px 26px rgba(24, 64, 72, 0.08);
+      --radius-xl: 32px;
+      --radius-lg: 24px;
+      --radius-md: 18px;
+      --radius-sm: 14px;
+      --max: 1120px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, "SF Pro Display", "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(61, 154, 151, 0.18), transparent 28%),
+        radial-gradient(circle at top right, rgba(173, 225, 226, 0.45), transparent 30%),
+        linear-gradient(180deg, #f6fbfc 0%, #edf5f7 55%, #e8f1f4 100%);
+      min-height: 100vh;
+      line-height: 1.65;
+    }
+
+    a {
+      color: var(--accent-deep);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    a:focus-visible,
+    button:focus-visible,
+    summary:focus-visible {
+      outline: 3px solid rgba(40, 122, 120, 0.35);
+      outline-offset: 3px;
+      border-radius: 12px;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .shell {
+      width: min(var(--max), calc(100% - 32px));
+      margin: 0 auto;
+      padding: 28px 0 56px;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 12px;
+      z-index: 20;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 22px;
+      padding: 10px;
+      border-radius: 999px;
+      background: rgba(248, 252, 253, 0.78);
+      border: 1px solid rgba(255, 255, 255, 0.72);
+      box-shadow: var(--shadow-soft);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+      min-width: 0;
+      flex: 1 1 300px;
+      color: var(--text);
+    }
+
+    .brand:hover {
+      text-decoration: none;
+    }
+
+    .brand-mark {
+      width: 54px;
+      height: 54px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, rgba(61, 154, 151, 1), rgba(74, 173, 169, 1));
+      color: white;
+      display: grid;
+      place-items: center;
+      box-shadow: 0 14px 32px rgba(61, 154, 151, 0.25);
+      font-size: 22px;
+      font-weight: 700;
+      flex: 0 0 auto;
+    }
+
+    .brand-copy {
+      min-width: 0;
+    }
+
+    .brand-label {
+      display: block;
+      color: var(--text-muted);
+      font-size: 0.82rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 2px;
+    }
+
+    .brand-name {
+      margin: 0;
+      font-size: clamp(1.1rem, 2.1vw, 1.55rem);
+      line-height: 1.05;
+      letter-spacing: -0.04em;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    .top-links {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      flex: 1 1 420px;
+    }
+
+    .pill-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 42px;
+      padding: 0 15px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.76);
+      box-shadow: 0 8px 18px rgba(24, 64, 72, 0.06);
+      color: var(--text);
+      font-weight: 700;
+      font-size: 0.9rem;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+    }
+
+    .pill-link:hover {
+      text-decoration: none;
+      border-color: var(--line-strong);
+      transform: translateY(-1px);
+    }
+
+    .pill-link.cta,
+    .button.primary,
+    .footer-link {
+      background: linear-gradient(135deg, var(--accent), #54b1ad);
+      color: white;
+      border-color: transparent;
+      box-shadow: 0 14px 28px rgba(61, 154, 151, 0.22);
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      background:
+        linear-gradient(135deg, rgba(255,255,255,0.98), rgba(245,251,252,0.94)),
+        linear-gradient(135deg, rgba(61, 154, 151, 0.12), rgba(173, 225, 226, 0.10));
+      border: 1px solid rgba(255, 255, 255, 0.72);
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow);
+      padding: clamp(28px, 5vw, 54px);
+      margin-bottom: 24px;
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+    }
+
+    .hero::before,
+    .hero::after,
+    .showcase::before,
+    .showcase::after {
+      content: "";
+      position: absolute;
+      border-radius: 999px;
+      pointer-events: none;
+    }
+
+    .hero::before {
+      width: 320px;
+      height: 320px;
+      top: -110px;
+      right: -80px;
+      background: radial-gradient(circle, rgba(61, 154, 151, 0.20), transparent 68%);
+      animation: drift 9s ease-in-out infinite;
+    }
+
+    .hero::after {
+      width: 230px;
+      height: 230px;
+      bottom: -90px;
+      left: -60px;
+      background: radial-gradient(circle, rgba(119, 205, 205, 0.16), transparent 70%);
+      animation: drift 11s ease-in-out infinite reverse;
+    }
+
+    .hero-grid {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: minmax(0, 1.08fr) minmax(300px, 0.92fr);
+      gap: clamp(28px, 5vw, 54px);
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 14px;
+      color: var(--accent-deep);
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-size: 0.78rem;
+    }
+
+    .eyebrow-dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--accent), #68c2be);
+      box-shadow: 0 0 0 6px rgba(61, 154, 151, 0.10);
+    }
+
+    .hero h1 {
+      margin: 0 0 14px;
+      font-size: clamp(3rem, 7vw, 6.7rem);
+      line-height: 0.88;
+      letter-spacing: -0.075em;
+      max-width: 10ch;
+    }
+
+    .hero p {
+      margin: 0;
+      max-width: 62ch;
+      color: var(--text-soft);
+      font-size: clamp(1.02rem, 1.5vw, 1.17rem);
+    }
+
+    .hero-actions,
+    .section-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 52px;
+      padding: 0 22px;
+      border-radius: 999px;
+      font-weight: 800;
+      letter-spacing: -0.01em;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.80);
+      color: var(--text);
+      box-shadow: var(--shadow-soft);
+      transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+    }
+
+    .button:hover {
+      text-decoration: none;
+      transform: translateY(-1px);
+      border-color: var(--line-strong);
+    }
+
+    .mini-phone-wrap {
+      display: grid;
+      place-items: center;
+      justify-items: center;
+      min-height: 600px;
+      overflow: visible;
+    }
+
+    .phone {
+      --tilt: 0deg;
+      --lift: 0px;
+      position: relative;
+      width: min(330px, 82vw);
+      aspect-ratio: 390 / 844;
+      padding: 13px;
+      border-radius: 52px;
+      background:
+        linear-gradient(145deg, #0b1115, #1e2b31 34%, #050708 74%),
+        #050708;
+      box-shadow:
+        0 34px 70px rgba(18, 48, 58, 0.22),
+        inset 0 0 0 2px rgba(255,255,255,0.10);
+      transform: translateY(var(--lift));
+      transform-origin: 50% 50%;
+      transition: transform 520ms cubic-bezier(.2,.8,.2,1);
+    }
+
+    .hero .phone {
+      width: min(315px, 74vw);
+      margin-inline: auto;
+    }
+
+    .phone::before {
+      content: "";
+      position: absolute;
+      top: 24px;
+      left: 50%;
+      width: 116px;
+      height: 34px;
+      border-radius: 999px;
+      transform: translateX(-50%);
+      background: #000;
+      z-index: 4;
+      box-shadow: 0 0 0 1px rgba(255,255,255,0.04);
+    }
+
+    .phone::after {
+      content: "";
+      position: absolute;
+      inset: 13px;
+      border-radius: 40px;
+      background: linear-gradient(115deg, rgba(255,255,255,0.34), transparent 22%, transparent 62%, rgba(255,255,255,0.11));
+      opacity: 0.34;
+      pointer-events: none;
+      z-index: 3;
+      mix-blend-mode: screen;
+    }
+
+    .phone-screen {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      border-radius: 40px;
+      background: #edf6f8;
+      isolation: isolate;
+    }
+
+    .phone-screen img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      opacity: 0;
+      transform: scale(1.035);
+      transition: opacity 520ms ease, transform 820ms cubic-bezier(.2,.8,.2,1);
+    }
+
+    .phone-screen img.active {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    .phone-caption {
+      position: absolute;
+      left: 50%;
+      bottom: -34px;
+      transform: translateX(-50%);
+      width: max-content;
+      max-width: 92%;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.84);
+      border: 1px solid var(--line);
+      color: var(--accent-deep);
+      font-size: 0.84rem;
+      font-weight: 900;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .screen-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      max-width: 390px;
+      margin-top: 54px;
+    }
+
+    .screen-tab {
+      appearance: none;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(255,255,255,0.82);
+      color: var(--text-soft);
+      min-height: 42px;
+      padding: 0 15px;
+      font: inherit;
+      font-size: 0.9rem;
+      font-weight: 900;
+      cursor: pointer;
+      box-shadow: 0 8px 18px rgba(24, 64, 72, 0.06);
+      transition: transform 180ms ease, color 180ms ease, border-color 180ms ease, background 180ms ease;
+    }
+
+    .screen-tab:hover {
+      transform: translateY(-1px);
+      border-color: var(--line-strong);
+      color: var(--text);
+    }
+
+    .screen-tab.active {
+      background: linear-gradient(135deg, var(--accent), #54b1ad);
+      border-color: transparent;
+      color: white;
+      box-shadow: 0 14px 26px rgba(61, 154, 151, 0.22);
+    }
+
+    .hero-card {
+      background: rgba(255,255,255,0.80);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 18px 18px 16px;
+      box-shadow: var(--shadow-soft);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+
+    .date-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      width: fit-content;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent-deep);
+      font-weight: 800;
+      font-size: 0.86rem;
+      margin-bottom: 12px;
+    }
+
+    .hero-card h2,
+    .hero-card h3 {
+      margin: 0 0 6px;
+      font-size: 1rem;
+      letter-spacing: -0.02em;
+    }
+
+    .hero-card p {
+      margin: 0;
+      color: var(--text-soft);
+      font-size: 0.95rem;
+    }
+
+    .badge-row,
+    .chip-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .badge,
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      min-height: 36px;
+      padding: 0 12px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.76);
+      border: 1px solid var(--line);
+      color: var(--text-soft);
+      font-size: 0.88rem;
+      font-weight: 800;
+    }
+
+    .badge::before,
+    .chip::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      flex: 0 0 auto;
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--accent), #70cbc6);
+      box-shadow: 0 0 0 5px rgba(61, 154, 151, 0.08);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .section {
+      margin-top: 24px;
+    }
+
+    .section-head {
+      grid-column: span 12;
+      padding: 8px 2px 2px;
+      max-width: 820px;
+    }
+
+    .section-head h2 {
+      margin: 0 0 10px;
+      font-size: clamp(1.8rem, 3vw, 2.9rem);
+      line-height: 1;
+      letter-spacing: -0.055em;
+    }
+
+    .section-head p {
+      margin: 0;
+      color: var(--text-soft);
+      font-size: 1.02rem;
+    }
+
+    .card {
+      grid-column: span 6;
+      background: var(--surface);
+      border: 1px solid rgba(255, 255, 255, 0.78);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      box-shadow: var(--shadow-soft);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+    }
+
+    .card.third {
+      grid-column: span 4;
+    }
+
+    .card.wide {
+      grid-column: span 12;
+    }
+
+    .card h2,
+    .card h3 {
+      margin: 0 0 12px;
+      font-size: 1.3rem;
+      line-height: 1.1;
+      letter-spacing: -0.03em;
+    }
+
+    .card h3 {
+      font-size: 1.12rem;
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--text-soft);
+      font-size: 0.98rem;
+    }
+
+    .mini-label {
+      display: inline-flex;
+      align-items: center;
+      margin-bottom: 12px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.75);
+      border: 1px solid var(--line);
+      color: var(--text-muted);
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .list {
+      list-style: none;
+      padding: 0;
+      margin: 16px 0 0;
+      display: grid;
+      gap: 12px;
+    }
+
+    .list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      color: var(--text-soft);
+      padding: 12px 14px;
+      border-radius: 16px;
+      background: rgba(255,255,255,0.72);
+      border: 1px solid rgba(36, 94, 96, 0.08);
+    }
+
+    .list-bullet {
+      width: 10px;
+      height: 10px;
+      border-radius: 999px;
+      margin-top: 9px;
+      flex: 0 0 auto;
+      background: linear-gradient(135deg, var(--accent), #70cbc6);
+      box-shadow: 0 0 0 6px rgba(61, 154, 151, 0.08);
+    }
+
+    .answer-card {
+      background: linear-gradient(135deg, rgba(61, 154, 151, 0.12), rgba(255,255,255,0.86));
+      border-color: rgba(61, 154, 151, 0.18);
+    }
+
+    .answer-card p {
+      color: var(--text);
+      font-weight: 800;
+      font-size: 1.02rem;
+      letter-spacing: -0.02em;
+    }
+
+    .showcase {
+      position: relative;
+      overflow: hidden;
+      margin-top: 24px;
+      padding: clamp(26px, 5vw, 48px);
+      border-radius: var(--radius-xl);
+      background:
+        radial-gradient(circle at 20% 20%, rgba(61, 154, 151, 0.18), transparent 34%),
+        linear-gradient(135deg, rgba(255,255,255,0.94), rgba(240,248,249,0.82));
+      border: 1px solid rgba(255,255,255,0.72);
+      box-shadow: var(--shadow);
+    }
+
+    .showcase::before {
+      width: 360px;
+      height: 360px;
+      right: -120px;
+      top: 18%;
+      background: radial-gradient(circle, rgba(61, 154, 151, 0.16), transparent 68%);
+    }
+
+    .showcase::after {
+      width: 240px;
+      height: 240px;
+      left: -80px;
+      bottom: 8%;
+      background: radial-gradient(circle, rgba(119, 205, 205, 0.18), transparent 72%);
+    }
+
+    .showcase-grid {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: minmax(300px, 0.8fr) minmax(0, 1.2fr);
+      gap: clamp(28px, 5vw, 56px);
+      align-items: start;
+    }
+
+    .phone-sticky {
+      position: sticky;
+      top: 112px;
+      display: grid;
+      place-items: center;
+      min-height: 720px;
+    }
+
+    .screen-list {
+      display: grid;
+      gap: 24px;
+      padding: 16px 0;
+    }
+
+    .screen-step {
+      min-height: 360px;
+      display: grid;
+      align-content: center;
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      background: rgba(255,255,255,0.72);
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow-soft);
+      opacity: 0.58;
+      transform: translateY(10px);
+      transition: opacity 420ms ease, transform 420ms ease, border-color 420ms ease;
+    }
+
+    .screen-step.active {
+      opacity: 1;
+      transform: translateY(0);
+      border-color: var(--line-strong);
+    }
+
+    .screen-step h3 {
+      margin: 0 0 10px;
+      font-size: clamp(1.55rem, 3vw, 2.35rem);
+      line-height: 1;
+      letter-spacing: -0.055em;
+    }
+
+    .screen-step p {
+      margin: 0;
+      color: var(--text-soft);
+      font-size: 1.02rem;
+    }
+
+    .flow {
+      margin-top: 18px;
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 8px;
+      align-items: center;
+    }
+
+    .flow-node {
+      min-height: 74px;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 10px;
+      border-radius: 18px;
+      background: rgba(255,255,255,0.82);
+      border: 1px solid var(--line);
+      color: var(--text);
+      font-size: 0.82rem;
+      font-weight: 900;
+      box-shadow: 0 10px 20px rgba(24, 64, 72, 0.06);
+    }
+
+    .flow-arrow {
+      color: var(--accent-deep);
+      font-weight: 900;
+      text-align: center;
+      animation: pulseArrow 1.8s ease-in-out infinite;
+    }
+
+    .step-card {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .step-number {
+      display: inline-grid;
+      place-items: center;
+      width: 42px;
+      height: 42px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, var(--accent), #63bbb7);
+      color: white;
+      font-weight: 900;
+      box-shadow: 0 12px 26px rgba(61, 154, 151, 0.22);
+      margin-bottom: 14px;
+    }
+
+    .comparison {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      overflow: hidden;
+      border-radius: 22px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.72);
+    }
+
+    .comparison th,
+    .comparison td {
+      width: 50%;
+      padding: 18px;
+      text-align: left;
+      vertical-align: top;
+      border-bottom: 1px solid rgba(36, 94, 96, 0.08);
+    }
+
+    .comparison th {
+      color: var(--text);
+      font-size: 1rem;
+      background: rgba(61, 154, 151, 0.10);
+    }
+
+    .comparison td {
+      color: var(--text-soft);
+    }
+
+    .comparison tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .safety-card {
+      background: linear-gradient(135deg, rgba(255, 246, 231, 0.92), rgba(255,255,255,0.88));
+      border-color: rgba(167, 111, 27, 0.16);
+    }
+
+    .faq-list {
+      grid-column: span 12;
+      display: grid;
+      gap: 12px;
+    }
+
+    details {
+      background: var(--surface);
+      border: 1px solid rgba(255, 255, 255, 0.78);
+      border-radius: var(--radius-md);
+      padding: 0;
+      box-shadow: var(--shadow-soft);
+      overflow: hidden;
+    }
+
+    summary {
+      cursor: pointer;
+      list-style: none;
+      padding: 18px 20px;
+      font-weight: 900;
+      letter-spacing: -0.02em;
+      color: var(--text);
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    summary::after {
+      content: "+";
+      float: right;
+      color: var(--accent-deep);
+      font-weight: 900;
+    }
+
+    details[open] summary::after {
+      content: "-";
+    }
+
+    details p {
+      margin: 0;
+      padding: 0 20px 20px;
+      color: var(--text-soft);
+    }
+
+    .contact-card {
+      background: linear-gradient(135deg, rgba(61, 154, 151, 0.12), rgba(255,255,255,0.84));
+    }
+
+    .footer {
+      margin-top: 24px;
+      padding: 22px;
+      border-radius: var(--radius-lg);
+      background: rgba(255,255,255,0.84);
+      border: 1px solid rgba(255,255,255,0.78);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .footer-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 18px;
+      margin-bottom: 16px;
+    }
+
+    .footer h2 {
+      margin: 0 0 6px;
+      font-size: 1.2rem;
+      letter-spacing: -0.03em;
+    }
+
+    .footer p {
+      margin: 0;
+      color: var(--text-soft);
+      max-width: 58ch;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: flex-end;
+    }
+
+    .footer-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 0 18px;
+      border-radius: 999px;
+      color: white;
+      font-weight: 800;
+    }
+
+    .footer-link.secondary {
+      background: white;
+      color: var(--text);
+      border: 1px solid var(--line);
+      box-shadow: 0 10px 22px rgba(36, 94, 96, 0.08);
+    }
+
+    .footer-link:hover {
+      text-decoration: none;
+      transform: translateY(-1px);
+    }
+
+    .note {
+      margin-top: 14px;
+      padding-top: 16px;
+      border-top: 1px solid rgba(36, 94, 96, 0.10);
+      color: var(--text-muted);
+      font-size: 0.92rem;
+    }
+
+    .motion-ready .reveal {
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity 720ms ease, transform 720ms cubic-bezier(.2,.8,.2,1);
+    }
+
+    .motion-ready .reveal.visible,
+    .reveal {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @keyframes drift {
+      0%, 100% { transform: translate3d(0, 0, 0); }
+      50% { transform: translate3d(0, 14px, 0); }
+    }
+
+    @keyframes pulseArrow {
+      0%, 100% { opacity: .45; transform: translateX(0); }
+      50% { opacity: 1; transform: translateX(4px); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+      }
+
+      .reveal {
+        opacity: 1;
+        transform: none;
+      }
+    }
+
+    @media (max-width: 1100px) {
+      .topbar {
+        border-radius: 28px;
+        align-items: flex-start;
+      }
+
+      .top-links {
+        max-width: 640px;
+      }
+
+      .brand-name {
+        white-space: normal;
+      }
+    }
+
+    @media (max-width: 960px) {
+      .hero-grid,
+      .showcase-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .phone-sticky {
+        position: relative;
+        top: auto;
+        min-height: auto;
+        padding: 18px 0 34px;
+      }
+
+      .screen-step {
+        min-height: auto;
+      }
+
+      .card,
+      .card.third {
+        grid-column: span 12;
+      }
+
+      .footer-top {
+        flex-direction: column;
+      }
+
+      .footer-links {
+        justify-content: flex-start;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .comparison,
+      .comparison tbody,
+      .comparison tr,
+      .comparison th,
+      .comparison td {
+        display: block;
+        width: 100%;
+      }
+
+      .comparison thead {
+        display: none;
+      }
+
+      .comparison td::before {
+        content: attr(data-label);
+        display: block;
+        color: var(--text);
+        font-weight: 900;
+        margin-bottom: 8px;
+      }
+
+      .flow {
+        grid-template-columns: 1fr;
+      }
+
+      .flow-arrow {
+        transform: rotate(90deg);
+      }
+    }
+
+    @media (max-width: 640px) {
+      .shell {
+        width: min(100% - 20px, var(--max));
+        padding-top: 18px;
+        padding-bottom: 32px;
+      }
+
+      .topbar {
+        position: relative;
+        top: auto;
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .top-links {
+        justify-content: flex-start;
+      }
+
+      .pill-link {
+        min-height: 40px;
+        padding: 0 13px;
+        font-size: 0.88rem;
+      }
+
+      .hero,
+      .showcase,
+      .card,
+      .footer {
+        border-radius: 24px;
+      }
+
+      .hero h1 {
+        max-width: none;
+      }
+
+      .hero-actions,
+      .section-actions,
+      .footer-links {
+        flex-direction: column;
+      }
+
+      .button,
+      .footer-link {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header class="topbar" aria-label="MyHealthPilot product navigation">
+      <a class="brand" href="./index.html" aria-label="MyHealthPilot home">
+        <div class="brand-mark" aria-hidden="true">&#10022;</div>
+        <div class="brand-copy">
+          <span class="brand-label">MyHealthPilot</span>
+          <p class="brand-name">Health questions, organised</p>
+        </div>
+      </a>
+      <nav class="top-links" aria-label="Primary links">
+        <a class="pill-link" href="#product">Product</a>
+        <a class="pill-link" href="#how-it-works">How it works</a>
+        <a class="pill-link" href="#safety">Safety</a>
+        <a class="pill-link" href="#faq">FAQ</a>
+        <a class="pill-link" href="./support.html">Support</a>
+        <a class="pill-link" href="./privacy.html">Privacy</a>
+        <a class="pill-link" href="./delete-account.html">Delete account</a>
+        <!-- App Store URL: update here if Apple changes the listing URL. -->
+        <a class="pill-link cta" href="https://apps.apple.com/app/myhealthpilot/id6762011742" rel="noopener">App Store</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero reveal" id="product" aria-labelledby="product-title">
+        <div class="hero-grid">
+          <div>
+            <div class="eyebrow">
+              <span class="eyebrow-dot" aria-hidden="true"></span>
+              AI health research agent
+            </div>
+            <h1 id="product-title">Your AI health research agent.</h1>
+            <p>
+              MyHealthPilot uses AI to help research the symptom or condition topic you enter, translate
+              source-backed context from places such as PubMed and NICE-style guidance into plain English,
+              and turn your notes into reports and monitoring plans. It is built for health organisation,
+              not diagnosis or treatment.
+            </p>
+            <div class="hero-actions" aria-label="Product actions">
+              <!-- App Store URL: update here if Apple changes the listing URL. -->
+              <a class="button primary" href="https://apps.apple.com/app/myhealthpilot/id6762011742" rel="noopener">Download on the App Store</a>
+              <a class="button" href="#how-it-works">See how it works</a>
+            </div>
+            <div class="badge-row" aria-label="Trust badges">
+              <span class="badge">Not a diagnosis app</span>
+              <span class="badge">AI health research</span>
+              <span class="badge">PubMed + NICE-style sources</span>
+              <span class="badge">Clinician-ready reports</span>
+              <span class="badge">AI-assisted monitoring</span>
+            </div>
+          </div>
+
+          <aside class="mini-phone-wrap" aria-label="MyHealthPilot app preview">
+            <div class="phone" aria-hidden="true" style="--lift:-6px">
+              <div class="phone-screen">
+                <!-- Screenshot asset paths live in assets/screenshots/. Replace these files with real screenshots anytime. -->
+                <img class="active" data-screen-image="chat" src="./assets/screenshots/Chat.png" alt="" />
+                <img data-screen-image="report" src="./assets/screenshots/Report.png" alt="" />
+                <img data-screen-image="monitor" src="./assets/screenshots/Monitor.png" alt="" />
+                <img data-screen-image="account" src="./assets/screenshots/Account.png" alt="" />
+              </div>
+              <div class="phone-caption" data-phone-caption>AI research chat</div>
+            </div>
+            <div class="screen-tabs hero-screen-tabs" aria-label="Choose app screen preview">
+              <button class="screen-tab active" type="button" data-screen-button="chat">AI chat</button>
+              <button class="screen-tab" type="button" data-screen-button="report">Report</button>
+              <button class="screen-tab" type="button" data-screen-button="monitor">Monitor</button>
+              <button class="screen-tab" type="button" data-screen-button="account">Account</button>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="grid section" aria-label="Short answers for search and AI answer engines">
+        <article class="card answer-card reveal">
+          <div class="mini-label">Short answer</div>
+          <p>MyHealthPilot is an AI health research agent that helps people turn confusing symptoms into structured notes, source-backed research summaries, monitoring plans, and reports for clinician discussions.</p>
+        </article>
+        <article class="card answer-card reveal">
+          <div class="mini-label">Safety boundary</div>
+          <p>MyHealthPilot is designed for AI-assisted symptom journaling, research translation, symptom tracking, saved health reports, and appointment preparation. It does not diagnose conditions, provide treatment decisions, triage emergencies, or replace professional medical care.</p>
+        </article>
+        <article class="card wide answer-card reveal">
+          <div class="mini-label">How people use it</div>
+          <p>People use MyHealthPilot to research symptom topics, organise what they are experiencing, track patterns over time, and prepare clearer notes before speaking to a health professional.</p>
+        </article>
+      </section>
+
+      <section class="grid section" aria-labelledby="usp-title">
+        <div class="section-head reveal">
+          <div class="mini-label">Key benefits</div>
+          <h2 id="usp-title">What makes MyHealthPilot different.</h2>
+          <p>It combines an AI health research agent, research-backed summaries, reports for clinician conversations, and ongoing monitoring in one flow.</p>
+        </div>
+        <article class="card third reveal">
+          <h3>AI researches the topic</h3>
+          <p>Ask about a symptom or condition topic and MyHealthPilot can look for relevant research context, then explain it in plain English with visible source links where used.</p>
+        </article>
+        <article class="card third reveal">
+          <h3>Grounded in medical sources</h3>
+          <p>Research-backed answers can include visible links such as PubMed and NICE-style guidance so users can review where the information came from.</p>
+        </article>
+        <article class="card third reveal">
+          <h3>Reports for doctor conversations</h3>
+          <p>Create a saved report that combines what you shared, relevant research context, monitoring suggestions, and the key points you may want to discuss.</p>
+        </article>
+        <article class="card wide contact-card reveal">
+          <h3>AI-assisted monitoring after the report</h3>
+          <p>Turn the report into daily tracking fields, log changes over time, and use follow-up questions to review patterns from your saved context. This supports better organisation, not diagnosis or treatment decisions.</p>
+        </article>
+      </section>
+
+      <section class="showcase reveal" id="how-it-works" aria-labelledby="showcase-title">
+        <div class="showcase-grid">
+          <aside class="phone-sticky" aria-label="Animated iPhone product walkthrough">
+            <div class="phone" id="showcase-phone" style="--lift:0px">
+              <div class="phone-screen">
+                <img class="active" data-screen-image="chat" src="./assets/screenshots/Chat.png" alt="MyHealthPilot chat screen with AI-guided symptom research" />
+                <img data-screen-image="report" src="./assets/screenshots/Report.png" alt="MyHealthPilot saved report screen with visible source links" />
+                <img data-screen-image="monitor" src="./assets/screenshots/Monitor.png" alt="MyHealthPilot monitor screen with active plan check-ins" />
+                <img data-screen-image="account" src="./assets/screenshots/Account.png" alt="MyHealthPilot account screen with app settings and support links" />
+              </div>
+              <div class="phone-caption" id="phone-caption" data-phone-caption>AI research chat</div>
+            </div>
+            <div class="screen-tabs" aria-label="Choose app screen">
+              <button class="screen-tab active" type="button" data-screen-button="chat">AI chat</button>
+              <button class="screen-tab" type="button" data-screen-button="report">Report</button>
+              <button class="screen-tab" type="button" data-screen-button="monitor">Monitor</button>
+              <button class="screen-tab" type="button" data-screen-button="account">Account</button>
+            </div>
+          </aside>
+
+          <div class="screen-list">
+            <div class="section-head">
+              <div class="mini-label">Product flow</div>
+              <h2 id="showcase-title">From a messy concern to research-backed notes.</h2>
+              <p>Scroll through the flow to see how MyHealthPilot connects AI-guided questions, source-backed research summaries, clinician-ready reports, and ongoing monitoring.</p>
+              <div class="flow" aria-label="MyHealthPilot product flow">
+                <span class="flow-node">Concern</span>
+                <span class="flow-arrow">→</span>
+                <span class="flow-node">AI research</span>
+                <span class="flow-arrow">→</span>
+                <span class="flow-node">Report</span>
+              </div>
+            </div>
+            <article class="screen-step active" data-screen="chat" data-caption="AI research chat" data-lift="0px">
+              <div class="mini-label">Step 1</div>
+              <h3>Ask a health question in plain English.</h3>
+              <p>Start with what you are experiencing and let the AI health research agent organise the concern into a clearer conversation.</p>
+            </article>
+            <article class="screen-step" data-screen="report" data-caption="Research-backed report" data-lift="0px">
+              <div class="mini-label">Step 2</div>
+              <h3>Turn the research into a report.</h3>
+              <p>Save what you shared, the research-backed context, and visible source links into a report you can use for a better clinician discussion.</p>
+            </article>
+            <article class="screen-step" data-screen="monitor" data-caption="AI-assisted monitoring" data-lift="0px">
+              <div class="mini-label">Step 3</div>
+              <h3>Monitor what changes over time.</h3>
+              <p>Use AI-assisted monitoring plans and self-entered check-ins to record severity, frequency, duration, impact, and other details that may be helpful to discuss later.</p>
+            </article>
+            <article class="screen-step" data-screen="account" data-caption="Private app settings" data-lift="0px">
+              <div class="mini-label">Step 4</div>
+              <h3>Keep support and settings close.</h3>
+              <p>Use the account area for app settings, privacy links, support information, and account controls.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="grid section" aria-labelledby="problem-title">
+        <div class="section-head reveal">
+          <div class="mini-label">The problem it solves</div>
+          <h2 id="problem-title">Health questions often start messy.</h2>
+          <p>
+            Many people experience symptoms or ongoing concerns and do not know how to organise what is happening.
+            They search online, read technical papers, forget details before appointments, and struggle to explain
+            patterns clearly. MyHealthPilot gives them a structured AI workspace to write, research, track, save,
+            and understand their own health notes.
+          </p>
+        </div>
+        <article class="card third reveal"><h3>Scattered symptom notes</h3><p>Replace loose notes, screenshots, and memory with a clearer symptom journal that keeps context together.</p></article>
+        <article class="card third reveal"><h3>Overwhelming health searches</h3><p>Use AI-guided prompts and source-backed plain-English summaries instead of jumping between anxious search results.</p></article>
+        <article class="card third reveal"><h3>Hard-to-explain patterns</h3><p>Capture timing, severity, triggers, related symptoms, and changes so patterns are easier to describe.</p></article>
+        <article class="card third reveal"><h3>Forgotten appointment details</h3><p>Save clinician-ready notes that help you prepare for a GP, private appointment, or clinician conversation.</p></article>
+        <article class="card third reveal"><h3>Technical research language</h3><p>Translate relevant PubMed and NICE-style research context into plain English while keeping visible source links where used.</p></article>
+        <article class="card third reveal"><h3>No clear monitoring structure</h3><p>Create AI-assisted monitoring plans based on user-entered notes, not diagnosis or medical certainty.</p></article>
+      </section>
+
+      <section class="grid section" aria-labelledby="features-title">
+        <div class="section-head reveal">
+          <div class="mini-label">What MyHealthPilot does</div>
+          <h2 id="features-title">Your AI health research agent.</h2>
+          <p>MyHealthPilot helps people turn a normal sentence into AI-organised notes, source-backed research context, clinician-ready reports, monitoring fields, and follow-up questions.</p>
+        </div>
+        <article class="card third reveal"><h3>AI health research agent</h3><p>Ask questions in plain English and get help organising the information you choose to enter around one clear health concern.</p></article>
+        <article class="card third reveal"><h3>Research-backed answers</h3><p>AI can research the symptom or condition topic and translate PubMed or NICE-style source context into clearer language.</p></article>
+        <article class="card third reveal"><h3>Guided symptom journaling</h3><p>Answer one focused question at a time so the app can build a clearer picture without long forms or diagnostic claims.</p></article>
+        <article class="card third reveal"><h3>Clinician-ready reports</h3><p>Turn the conversation, relevant research context, and monitoring suggestions into a saved report you can use for a better discussion.</p></article>
+        <article class="card third reveal"><h3>AI-assisted monitoring</h3><p>Create self-tracking fields such as severity, duration, frequency, triggers, and day-to-day impact, then review patterns over time.</p></article>
+        <article class="card third reveal"><h3>Visible sources</h3><p>Where research-backed information is used, source links may be shown directly with provider labels, titles, and links.</p></article>
+      </section>
+
+      <section class="grid section" aria-labelledby="steps-title">
+        <div class="section-head reveal">
+          <div class="mini-label">How it works</div>
+          <h2 id="steps-title">Five simple steps.</h2>
+          <p>The flow is designed to be simple: start naturally, answer guided questions, review research context, save a report, and monitor what matters over time.</p>
+        </div>
+        <article class="card step-card third reveal"><span class="step-number">1</span><h3>Start with a normal sentence</h3><p>Write something like "I keep getting headaches" or "I want to track lower back pain."</p></article>
+        <article class="card step-card third reveal"><span class="step-number">2</span><h3>Answer one guided question</h3><p>MyHealthPilot helps structure the basics without long forms or diagnosis-style claims.</p></article>
+        <article class="card step-card third reveal"><span class="step-number">3</span><h3>Review AI research context</h3><p>Where useful, the app can translate relevant PubMed or NICE-style source context into plain English with visible links.</p></article>
+        <article class="card step-card reveal"><span class="step-number">4</span><h3>Generate a clinician-ready report</h3><p>Save a clearer summary of what you entered, relevant research context, what to monitor, and safety boundaries.</p></article>
+        <article class="card step-card reveal"><span class="step-number">5</span><h3>Monitor and ask follow-ups</h3><p>Use check-ins to record patterns over time, then ask follow-up questions from the saved context.</p></article>
+        <article class="card wide contact-card reveal">
+          <div class="mini-label">Start organising</div>
+          <h2>Download MyHealthPilot on the App Store</h2>
+          <p>Use MyHealthPilot to turn health concerns into AI-organised notes, source-backed summaries, monitoring plans, and saved reports.</p>
+          <div class="section-actions">
+            <a class="button primary" href="https://apps.apple.com/app/myhealthpilot/id6762011742" rel="noopener">Download MyHealthPilot on the App Store</a>
+            <a class="button" href="#faq">Learn how it works</a>
+          </div>
+        </article>
+      </section>
+
+      <section class="grid section" aria-labelledby="moments-title">
+        <div class="section-head reveal">
+          <div class="mini-label">Designed for these moments</div>
+          <h2 id="moments-title">When you need clarity before certainty.</h2>
+          <p>MyHealthPilot is useful when you want AI support to organise observations, research context, and patterns without jumping to conclusions.</p>
+        </div>
+        <article class="card third reveal"><h3>You keep Googling symptoms and feel overwhelmed</h3><p>Bring scattered searches back into one AI-guided journal with source-backed context where relevant.</p></article>
+        <article class="card third reveal"><h3>You are waiting for a GP or private appointment</h3><p>Prepare clearer notes about timing, pattern, severity, what changed, and what research context may be useful to discuss.</p></article>
+        <article class="card third reveal"><h3>You want to track recurring symptoms</h3><p>Monitor changes over time using AI-assisted plans, simple self-entered fields, and saved check-ins.</p></article>
+        <article class="card third reveal"><h3>You want clearer notes for a clinician conversation</h3><p>Use reports to explain what you noticed, what you asked, and what research-backed context was shown.</p></article>
+        <article class="card third reveal"><h3>You want plain-English research context</h3><p>Read AI-translated summaries with visible source links where research-backed information is used.</p></article>
+        <article class="card third reveal"><h3>You help a family member organise health information</h3><p>Keep notes structured so conversations and follow-ups are easier to manage.</p></article>
+      </section>
+
+      <section class="grid section" aria-labelledby="track-title">
+        <div class="section-head reveal">
+          <div class="mini-label">What you can track</div>
+          <h2 id="track-title">Self-entered notes that make patterns easier to see.</h2>
+          <p>Tracking fields are for user-entered journaling and AI-assisted monitoring. They are not medical diagnosis, disease detection, treatment instruction, or emergency triage.</p>
+        </div>
+        <article class="card wide reveal">
+          <div class="chip-list" aria-label="Examples of things users can track">
+            <span class="chip">Severity 0-10</span><span class="chip">Duration</span><span class="chip">Frequency</span><span class="chip">Triggers</span><span class="chip">Relieving factors</span><span class="chip">Sleep</span><span class="chip">Activity</span><span class="chip">Medication use</span><span class="chip">Impact on daily activities</span><span class="chip">Related symptoms</span><span class="chip">Changes over time</span>
+          </div>
+        </article>
+      </section>
+
+      <section class="grid section" aria-labelledby="research-title">
+        <div class="section-head reveal">
+          <div class="mini-label">Research translation</div>
+          <h2 id="research-title">AI research translation with visible sources.</h2>
+          <p>MyHealthPilot can use AI to research the symptom or condition topic you ask about, then translate relevant source-backed context into plain English. Where research-backed information is used, it may show visible links such as PubMed or NICE-style guidance. The aim is to help users understand context, not make medical decisions.</p>
+        </div>
+        <article class="card reveal"><h3>Source-backed summaries</h3><p>Summaries are written to explain what the research context says in clearer language while avoiding diagnostic certainty or treatment decisions.</p></article>
+        <aside class="card safety-card reveal" aria-label="Research safety note"><h3>Research summaries are for education and organisation.</h3><p>Diagnosis, treatment, and medical decisions should be discussed with a qualified professional.</p></aside>
+      </section>
+
+      <section class="grid section" aria-labelledby="comparison-title">
+        <div class="section-head reveal">
+          <div class="mini-label">Compared with symptom search</div>
+          <h2 id="comparison-title">AI research and monitoring instead of scattered tabs.</h2>
+          <p>MyHealthPilot is not a replacement for professional care. It is a more organised way to collect notes, translate research context, save reports, and decide what to discuss with a professional.</p>
+        </div>
+        <article class="card wide reveal">
+          <table class="comparison" aria-label="Random symptom searching compared with MyHealthPilot">
+            <thead><tr><th scope="col">Random symptom searching</th><th scope="col">MyHealthPilot</th></tr></thead>
+            <tbody>
+              <tr><td data-label="Random symptom searching">Scattered tabs and screenshots</td><td data-label="MyHealthPilot">AI-organised notes</td></tr>
+              <tr><td data-label="Random symptom searching">Often increases anxiety</td><td data-label="MyHealthPilot">One guided question at a time</td></tr>
+              <tr><td data-label="Random symptom searching">Hard to verify context</td><td data-label="MyHealthPilot">Visible PubMed and NICE-style source links where used</td></tr>
+              <tr><td data-label="Random symptom searching">Hard to save context</td><td data-label="MyHealthPilot">Clinician-ready saved reports</td></tr>
+              <tr><td data-label="Random symptom searching">Not built around your timeline</td><td data-label="MyHealthPilot">AI-assisted monitoring plans</td></tr>
+              <tr><td data-label="Random symptom searching">Easy to forget details</td><td data-label="MyHealthPilot">Plain-English research summaries and appointment preparation</td></tr>
+            </tbody>
+          </table>
+        </article>
+      </section>
+
+      <section class="grid section" id="safety" aria-labelledby="safety-title">
+        <div class="section-head reveal">
+          <div class="mini-label">Safety and boundaries</div>
+          <h2 id="safety-title">Clear support, clear limits.</h2>
+          <p>MyHealthPilot is designed to support AI-assisted organisation, journaling, monitoring, and research translation. It is not designed to replace clinician-led care.</p>
+        </div>
+        <article class="card wide safety-card reveal">
+          <h3>Important safety information</h3>
+          <ul class="list">
+            <li><span class="list-bullet" aria-hidden="true"></span><span>MyHealthPilot does not diagnose conditions.</span></li>
+            <li><span class="list-bullet" aria-hidden="true"></span><span>It does not provide treatment decisions.</span></li>
+            <li><span class="list-bullet" aria-hidden="true"></span><span>It does not replace a doctor, pharmacist, emergency service, or qualified professional.</span></li>
+            <li><span class="list-bullet" aria-hidden="true"></span><span>It is not for emergencies.</span></li>
+            <li><span class="list-bullet" aria-hidden="true"></span><span>It supports AI-assisted organisation, journaling, monitoring, and research translation.</span></li>
+            <li><span class="list-bullet" aria-hidden="true"></span><span>Users should seek urgent care for urgent, severe, or rapidly worsening symptoms.</span></li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="grid section" id="faq" aria-labelledby="faq-title">
+        <div class="section-head reveal">
+          <div class="mini-label">FAQ</div>
+          <h2 id="faq-title">Questions people ask about MyHealthPilot.</h2>
+          <p>These answers explain what the app is for, how it can help, and where the boundaries are.</p>
+        </div>
+        <div class="faq-list reveal">
+          <details><summary>What is MyHealthPilot?</summary><p>MyHealthPilot is an AI health research agent that helps people turn confusing symptoms into structured notes, source-backed research summaries, monitoring plans, and reports for clinician discussions.</p></details>
+          <details><summary>Is MyHealthPilot a symptom checker?</summary><p>MyHealthPilot is not positioned as a diagnostic symptom checker. It supports symptom journaling, symptom tracking, saved health reports, research translation, and appointment preparation.</p></details>
+          <details><summary>Does MyHealthPilot diagnose symptoms?</summary><p>No. MyHealthPilot does not diagnose conditions, provide treatment decisions, triage emergencies, or replace professional medical care.</p></details>
+          <details><summary>Can MyHealthPilot help before a GP appointment?</summary><p>Yes. MyHealthPilot can help people organise health concerns, research relevant context, track patterns over time, and prepare clearer reports before speaking to a GP or other qualified professional.</p></details>
+          <details><summary>What can I track in MyHealthPilot?</summary><p>You can track self-entered notes such as severity, duration, frequency, triggers, relieving factors, sleep, activity, medication use, impact on daily activities, related symptoms, and changes over time.</p></details>
+          <details><summary>Does MyHealthPilot provide medical advice?</summary><p>MyHealthPilot provides AI-assisted organisation, journaling, monitoring, and research translation support. Diagnosis, treatment, and medical decisions should be discussed with a qualified professional.</p></details>
+          <details><summary>How does MyHealthPilot use research sources?</summary><p>Where research-backed information is used, MyHealthPilot may research the symptom or condition topic and show visible source links such as PubMed or NICE-style guidance so users can review the context.</p></details>
+          <details><summary>Is MyHealthPilot free?</summary><p>MyHealthPilot is currently available to download. Future features or access options may change.</p></details>
+          <details><summary>Who is MyHealthPilot for?</summary><p>MyHealthPilot is for people who want a calmer AI-supported way to organise symptoms, track patterns, save health notes, understand research context, and prepare for conversations with health professionals.</p></details>
+          <details><summary>What should I do in an emergency?</summary><p>Do not rely on MyHealthPilot in an emergency. Contact local emergency services or seek urgent professional medical help for urgent, severe, or rapidly worsening symptoms.</p></details>
+        </div>
+      </section>
+
+      <footer class="footer reveal">
+        <div class="footer-top">
+          <div>
+            <h2>Start organising your health notes today.</h2>
+            <p>MyHealthPilot helps with AI-assisted symptom organisation, health journaling, source-backed research translation, saved reports, and monitoring over time.</p>
+          </div>
+          <div class="footer-links">
+            <a class="footer-link" href="https://apps.apple.com/app/myhealthpilot/id6762011742" rel="noopener">Download MyHealthPilot on the App Store</a>
+            <a class="footer-link secondary" href="./support.html">Support</a>
+            <a class="footer-link secondary" href="./privacy.html">Privacy Policy</a>
+            <a class="footer-link secondary" href="./delete-account.html">Delete Account</a>
+          </div>
+        </div>
+        <div class="note">
+          MyHealthPilot supports AI-assisted symptom organisation, health journaling, research translation, and monitoring.
+          It does not replace emergency services or clinician-led care.
+        </div>
+      </footer>
+    </main>
+  </div>
+
+  <script>
+    (() => {
+      const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      const revealItems = Array.from(document.querySelectorAll(".reveal"));
+      if (reduceMotion) {
+        revealItems.forEach((item) => item.classList.add("visible"));
+      } else {
+        const revealObserver = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+              revealObserver.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.12 });
+        revealItems.forEach((item) => revealObserver.observe(item));
+      }
+
+      const phone = document.getElementById("showcase-phone");
+      const captions = Array.from(document.querySelectorAll("[data-phone-caption]"));
+      const images = Array.from(document.querySelectorAll("[data-screen-image]"));
+      const steps = Array.from(document.querySelectorAll("[data-screen]"));
+      const screenButtons = Array.from(document.querySelectorAll("[data-screen-button]"));
+
+      const setScreen = (step) => {
+        const screen = step.dataset.screen;
+        images.forEach((image) => image.classList.toggle("active", image.dataset.screenImage === screen));
+        steps.forEach((item) => item.classList.toggle("active", item === step));
+        screenButtons.forEach((button) => {
+          const active = button.dataset.screenButton === screen;
+          button.classList.toggle("active", active);
+          button.setAttribute("aria-pressed", active ? "true" : "false");
+        });
+        captions.forEach((caption) => {
+          caption.textContent = step.dataset.caption || "MyHealthPilot";
+        });
+        if (phone && !reduceMotion) {
+          phone.style.setProperty("--lift", step.dataset.lift || "0px");
+        }
+      };
+
+      if (steps.length) {
+        let activeFrame = 0;
+        let manualOverrideUntil = 0;
+
+        const setScreenByName = (screen) => {
+          const matchingStep = steps.find((step) => step.dataset.screen === screen);
+          if (!matchingStep) return;
+          manualOverrideUntil = Date.now() + 4000;
+          setScreen(matchingStep);
+        };
+
+        window.myHealthPilotSetScreen = setScreenByName;
+        setScreen(steps[0]);
+
+        const updateActiveStep = () => {
+          activeFrame = 0;
+          if (Date.now() < manualOverrideUntil) return;
+          const targetLine = window.innerHeight * 0.56;
+          let bestStep = steps[0];
+          let bestDistance = Number.POSITIVE_INFINITY;
+
+          steps.forEach((step) => {
+            const rect = step.getBoundingClientRect();
+            const isNearViewport = rect.bottom > 96 && rect.top < window.innerHeight - 96;
+            if (!isNearViewport) return;
+            const center = rect.top + rect.height / 2;
+            const distance = Math.abs(center - targetLine);
+            if (distance < bestDistance) {
+              bestDistance = distance;
+              bestStep = step;
+            }
+          });
+
+          setScreen(bestStep);
+        };
+
+        const scheduleActiveStepUpdate = () => {
+          if (activeFrame) return;
+          activeFrame = window.requestAnimationFrame(updateActiveStep);
+        };
+
+        const stepObserver = new IntersectionObserver((entries) => {
+          if (entries.some((entry) => entry.isIntersecting)) {
+            scheduleActiveStepUpdate();
+          }
+        }, {
+          rootMargin: "-10% 0px -10% 0px",
+          threshold: [0, 0.25, 0.5, 0.75, 1]
+        });
+        steps.forEach((step) => stepObserver.observe(step));
+        screenButtons.forEach((button) => {
+          button.setAttribute("aria-pressed", button.classList.contains("active") ? "true" : "false");
+        });
+        document.addEventListener("click", (event) => {
+          const button = event.target.closest("[data-screen-button]");
+          if (!button) return;
+          event.preventDefault();
+          setScreenByName(button.getAttribute("data-screen-button"));
+        });
+        window.addEventListener("scroll", scheduleActiveStepUpdate, { passive: true });
+        window.addEventListener("resize", scheduleActiveStepUpdate);
+        scheduleActiveStepUpdate();
+      }
+    })();
+  </script>
+</body>
+</html>
