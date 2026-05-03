@@ -3,28 +3,35 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>MyHealthPilot | AI Health Research Agent, Symptom Journal & Monitoring App</title>
-  <meta name="description" content="MyHealthPilot is an AI health research agent that helps you research symptom topics, understand PubMed and NICE-style sources in plain English, create reports, and monitor patterns over time. Built for organisation, not diagnosis." />
+  <title>MyHealthPilot | AI Health Research & Symptom Journal App</title>
+  <meta name="description" content="MyHealthPilot helps you organise symptoms, research health topics, create reports, and monitor patterns. Built for organisation, not diagnosis." />
   <meta name="keywords" content="AI health app, health journal app, symptom journal app, symptom tracker app, health notes app, GP appointment notes, symptom tracking, symptom organisation, PubMed health research, health research summaries, plain-English health research, AI symptom monitoring" />
-  <meta name="robots" content="index,follow" />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+  <meta name="author" content="MyHealthPilot" />
+  <meta name="application-name" content="MyHealthPilot" />
+  <meta name="apple-mobile-web-app-title" content="MyHealthPilot" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
   <meta name="theme-color" content="#eef6f8" />
-  <!-- Update canonical URL before production if the final domain changes. -->
   <link rel="canonical" href="https://www.myhealthpilot.com/" />
-  <!-- Add favicon files here when available. -->
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
 
   <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_GB" />
   <meta property="og:site_name" content="MyHealthPilot" />
-  <meta property="og:title" content="MyHealthPilot | AI Health Research Agent, Symptom Journal & Monitoring App" />
-  <meta property="og:description" content="Use an AI health research agent to research symptom topics, understand source-backed summaries, create reports, and monitor patterns over time. Built for organisation, not diagnosis." />
+  <meta property="og:title" content="MyHealthPilot | AI Health Research & Symptom Journal App" />
+  <meta property="og:description" content="Organise symptoms, research health topics with visible sources, create reports, and monitor patterns. Built for organisation, not diagnosis." />
   <meta property="og:url" content="https://www.myhealthpilot.com/" />
-  <!-- Add a real social preview image here. -->
-  <meta property="og:image" content="https://www.myhealthpilot.com/social-preview.png" />
+  <meta property="og:image" content="https://www.myhealthpilot.com/assets/screenshots/Chat.png" />
+  <meta property="og:image:alt" content="MyHealthPilot app chat screen showing an AI-guided health research conversation" />
+  <meta property="og:image:width" content="370" />
+  <meta property="og:image:height" content="800" />
 
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="MyHealthPilot | AI Health Research Agent, Symptom Journal & Monitoring App" />
-  <meta name="twitter:description" content="Use an AI health research agent to organise health notes, understand source-backed research summaries, create reports, and monitor patterns over time." />
-  <!-- Add a real social preview image here. -->
-  <meta name="twitter:image" content="https://www.myhealthpilot.com/social-preview.png" />
+  <meta name="twitter:title" content="MyHealthPilot | AI Health Research & Symptom Journal App" />
+  <meta name="twitter:description" content="Organise symptoms, research health topics with visible sources, create reports, and monitor patterns. Built for organisation, not diagnosis." />
+  <meta name="twitter:image" content="https://www.myhealthpilot.com/assets/screenshots/Chat.png" />
+  <meta name="twitter:image:alt" content="MyHealthPilot app chat screen showing an AI-guided health research conversation" />
 
   <script>
     if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
@@ -42,6 +49,8 @@
         "name": "MyHealthPilot",
         "url": "https://www.myhealthpilot.com/",
         "description": "MyHealthPilot is a consumer health organisation app that uses AI to help users organise symptom notes, translate research sources into plain English, create reports, and monitor patterns over time.",
+        "email": "myhealthpilotmobile@gmail.com",
+        "logo": "https://www.myhealthpilot.com/assets/favicon.svg",
         "sameAs": ["https://apps.apple.com/app/myhealthpilot/id6762011742"]
       },
       {
@@ -50,7 +59,28 @@
         "name": "MyHealthPilot",
         "url": "https://www.myhealthpilot.com/",
         "publisher": {"@id": "https://www.myhealthpilot.com/#organization"},
+        "inLanguage": "en-GB",
         "description": "MyHealthPilot helps people organise symptoms, research health topics with visible sources, track patterns, save health reports, and understand health research in plain English."
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://www.myhealthpilot.com/#webpage",
+        "url": "https://www.myhealthpilot.com/",
+        "name": "MyHealthPilot | AI Health Research & Symptom Journal App",
+        "isPartOf": {"@id": "https://www.myhealthpilot.com/#website"},
+        "about": {"@id": "https://www.myhealthpilot.com/#app"},
+        "primaryImageOfPage": {"@id": "https://www.myhealthpilot.com/#primaryimage"},
+        "inLanguage": "en-GB",
+        "dateModified": "2026-05-03",
+        "description": "MyHealthPilot helps users organise symptom notes, translate source-backed research into plain English, create reports, and monitor patterns over time."
+      },
+      {
+        "@type": "ImageObject",
+        "@id": "https://www.myhealthpilot.com/#primaryimage",
+        "url": "https://www.myhealthpilot.com/assets/screenshots/Chat.png",
+        "width": 370,
+        "height": 800,
+        "caption": "MyHealthPilot app chat screen"
       },
       {
         "@type": "SoftwareApplication",
@@ -60,12 +90,20 @@
         "operatingSystem": "iOS",
         "url": "https://www.myhealthpilot.com/",
         "downloadUrl": "https://apps.apple.com/app/myhealthpilot/id6762011742",
+        "installUrl": "https://apps.apple.com/app/myhealthpilot/id6762011742",
+        "image": [
+          "https://www.myhealthpilot.com/assets/screenshots/Chat.png",
+          "https://www.myhealthpilot.com/assets/screenshots/Report.png",
+          "https://www.myhealthpilot.com/assets/screenshots/Monitor.png",
+          "https://www.myhealthpilot.com/assets/screenshots/Account.png"
+        ],
+        "isAccessibleForFree": true,
         "offers": {"@type": "Offer", "price": "0", "priceCurrency": "GBP"},
-        "description": "MyHealthPilot is an AI health research agent that helps users research symptom or condition topics, understand PubMed and NICE-style sources in plain English, create clinician-ready reports, and monitor self-entered patterns over time. It does not diagnose, treat, triage emergencies, or replace professional medical care.",
+        "description": "MyHealthPilot is an AI health research agent that helps users research symptom or condition topics, understand source-backed health research in plain English, create clinician-ready reports, and monitor self-entered patterns over time. It does not diagnose, treat, triage emergencies, or replace professional medical care.",
         "featureList": [
           "AI health research agent",
           "AI-assisted research translation",
-          "PubMed and NICE-style visible source links",
+          "Visible source links for research-backed information",
           "Structured symptom notes",
           "Guided health journaling",
           "AI-assisted symptom monitoring plans",
@@ -85,7 +123,7 @@
           {"@type": "Question", "name": "Can MyHealthPilot help before a GP appointment?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. MyHealthPilot can help people organise health concerns, research relevant context, track patterns over time, and prepare clearer reports before speaking to a GP or other qualified professional."}},
           {"@type": "Question", "name": "What can I track in MyHealthPilot?", "acceptedAnswer": {"@type": "Answer", "text": "Users can track self-entered notes such as severity, duration, frequency, triggers, relieving factors, sleep, activity, medication use, impact on daily activities, related symptoms, and changes over time."}},
           {"@type": "Question", "name": "Does MyHealthPilot provide medical advice?", "acceptedAnswer": {"@type": "Answer", "text": "MyHealthPilot provides AI-assisted organisation, journaling, monitoring, and research translation support. Diagnosis, treatment, and medical decisions should be discussed with a qualified professional."}},
-          {"@type": "Question", "name": "How does MyHealthPilot use research sources?", "acceptedAnswer": {"@type": "Answer", "text": "Where research-backed information is used, MyHealthPilot may research the symptom or condition topic and show visible source links such as PubMed or NICE-style guidance so users can review the context."}},
+          {"@type": "Question", "name": "How does MyHealthPilot use research sources?", "acceptedAnswer": {"@type": "Answer", "text": "Where research-backed information is used, MyHealthPilot may research the symptom or condition topic and show visible source links so users can review the context."}},
           {"@type": "Question", "name": "Is MyHealthPilot free?", "acceptedAnswer": {"@type": "Answer", "text": "MyHealthPilot is currently available to download. Future features or access options may change."}},
           {"@type": "Question", "name": "Who is MyHealthPilot for?", "acceptedAnswer": {"@type": "Answer", "text": "MyHealthPilot is for people who want a calmer AI-supported way to organise symptoms, track patterns, save health notes, understand research context, and prepare for conversations with health professionals."}},
           {"@type": "Question", "name": "What should I do in an emergency?", "acceptedAnswer": {"@type": "Answer", "text": "Do not rely on MyHealthPilot in an emergency. Contact local emergency services or seek urgent professional medical help for urgent, severe, or rapidly worsening symptoms."}}
@@ -132,6 +170,10 @@
       scroll-behavior: smooth;
     }
 
+    [id] {
+      scroll-margin-top: 140px;
+    }
+
     body {
       margin: 0;
       font-family: Inter, "SF Pro Display", "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -164,6 +206,37 @@
     img {
       max-width: 100%;
       display: block;
+    }
+
+    h1,
+    h2,
+    h3,
+    p,
+    li,
+    summary,
+    .button,
+    .pill-link,
+    .footer-link,
+    .screen-tab,
+    .badge,
+    .chip,
+    .flow-node,
+    .phone-caption {
+      overflow-wrap: break-word;
+      word-break: normal;
+    }
+
+    .brand,
+    .brand-copy,
+    .top-links,
+    .hero-grid > *,
+    .showcase-grid > *,
+    .screen-list,
+    .section-head,
+    .card,
+    .screen-step,
+    .footer-top > * {
+      min-width: 0;
     }
 
     .shell {
@@ -235,7 +308,7 @@
       margin: 0;
       font-size: clamp(1.1rem, 2.1vw, 1.55rem);
       line-height: 1.05;
-      letter-spacing: -0.04em;
+      letter-spacing: 0;
       font-weight: 800;
       white-space: nowrap;
     }
@@ -358,7 +431,7 @@
       margin: 0 0 14px;
       font-size: clamp(3rem, 7vw, 6.7rem);
       line-height: 0.88;
-      letter-spacing: -0.075em;
+      letter-spacing: 0;
       max-width: 10ch;
     }
 
@@ -385,7 +458,7 @@
       padding: 0 22px;
       border-radius: 999px;
       font-weight: 800;
-      letter-spacing: -0.01em;
+      letter-spacing: 0;
       border: 1px solid var(--line);
       background: rgba(255,255,255,0.80);
       color: var(--text);
@@ -567,7 +640,7 @@
     .hero-card h3 {
       margin: 0 0 6px;
       font-size: 1rem;
-      letter-spacing: -0.02em;
+      letter-spacing: 0;
     }
 
     .hero-card p {
@@ -630,7 +703,7 @@
       margin: 0 0 10px;
       font-size: clamp(1.8rem, 3vw, 2.9rem);
       line-height: 1;
-      letter-spacing: -0.055em;
+      letter-spacing: 0;
     }
 
     .section-head p {
@@ -663,7 +736,7 @@
       margin: 0 0 12px;
       font-size: 1.3rem;
       line-height: 1.1;
-      letter-spacing: -0.03em;
+      letter-spacing: 0;
     }
 
     .card h3 {
@@ -729,7 +802,7 @@
       color: var(--text);
       font-weight: 800;
       font-size: 1.02rem;
-      letter-spacing: -0.02em;
+      letter-spacing: 0;
     }
 
     .showcase {
@@ -780,8 +853,14 @@
 
     .screen-list {
       display: grid;
+      grid-template-columns: minmax(0, 1fr);
       gap: 24px;
       padding: 16px 0;
+    }
+
+    .screen-list .section-head,
+    .screen-list .screen-step {
+      grid-column: 1 / -1;
     }
 
     .screen-step {
@@ -808,7 +887,7 @@
       margin: 0 0 10px;
       font-size: clamp(1.55rem, 3vw, 2.35rem);
       line-height: 1;
-      letter-spacing: -0.055em;
+      letter-spacing: 0;
     }
 
     .screen-step p {
@@ -923,7 +1002,7 @@
       list-style: none;
       padding: 18px 20px;
       font-weight: 900;
-      letter-spacing: -0.02em;
+      letter-spacing: 0;
       color: var(--text);
     }
 
@@ -972,7 +1051,7 @@
     .footer h2 {
       margin: 0 0 6px;
       font-size: 1.2rem;
-      letter-spacing: -0.03em;
+      letter-spacing: 0;
     }
 
     .footer p {
@@ -1072,8 +1151,7 @@
       }
     }
 
-    @media (max-width: 960px) {
-      .hero-grid,
+    @media (max-width: 1180px) {
       .showcase-grid {
         grid-template-columns: 1fr;
       }
@@ -1087,6 +1165,12 @@
 
       .screen-step {
         min-height: auto;
+      }
+    }
+
+    @media (max-width: 960px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
       }
 
       .card,
@@ -1146,6 +1230,16 @@
         top: auto;
         flex-direction: column;
         align-items: stretch;
+        justify-content: flex-start;
+      }
+
+      [id] {
+        scroll-margin-top: 20px;
+      }
+
+      .brand,
+      .top-links {
+        flex: 0 1 auto;
       }
 
       .top-links {
@@ -1216,7 +1310,7 @@
             <h1 id="product-title">Your AI health research agent.</h1>
             <p>
               MyHealthPilot uses AI to help research the symptom or condition topic you enter, translate
-              source-backed context from places such as PubMed and NICE-style guidance into plain English,
+              source-backed research context into plain English,
               and turn your notes into reports and monitoring plans. It is built for health organisation,
               not diagnosis or treatment.
             </p>
@@ -1228,7 +1322,7 @@
             <div class="badge-row" aria-label="Trust badges">
               <span class="badge">Not a diagnosis app</span>
               <span class="badge">AI health research</span>
-              <span class="badge">PubMed + NICE-style sources</span>
+              <span class="badge">Visible source links</span>
               <span class="badge">Clinician-ready reports</span>
               <span class="badge">AI-assisted monitoring</span>
             </div>
@@ -1282,7 +1376,7 @@
         </article>
         <article class="card third reveal">
           <h3>Grounded in medical sources</h3>
-          <p>Research-backed answers can include visible links such as PubMed and NICE-style guidance so users can review where the information came from.</p>
+          <p>Research-backed answers can include visible source links so users can review where the information came from.</p>
         </article>
         <article class="card third reveal">
           <h3>Reports for doctor conversations</h3>
@@ -1366,7 +1460,7 @@
         <article class="card third reveal"><h3>Overwhelming health searches</h3><p>Use AI-guided prompts and source-backed plain-English summaries instead of jumping between anxious search results.</p></article>
         <article class="card third reveal"><h3>Hard-to-explain patterns</h3><p>Capture timing, severity, triggers, related symptoms, and changes so patterns are easier to describe.</p></article>
         <article class="card third reveal"><h3>Forgotten appointment details</h3><p>Save clinician-ready notes that help you prepare for a GP, private appointment, or clinician conversation.</p></article>
-        <article class="card third reveal"><h3>Technical research language</h3><p>Translate relevant PubMed and NICE-style research context into plain English while keeping visible source links where used.</p></article>
+        <article class="card third reveal"><h3>Technical research language</h3><p>Translate relevant source-backed research context into plain English while keeping visible source links where used.</p></article>
         <article class="card third reveal"><h3>No clear monitoring structure</h3><p>Create AI-assisted monitoring plans based on user-entered notes, not diagnosis or medical certainty.</p></article>
       </section>
 
@@ -1377,7 +1471,7 @@
           <p>MyHealthPilot helps people turn a normal sentence into AI-organised notes, source-backed research context, clinician-ready reports, monitoring fields, and follow-up questions.</p>
         </div>
         <article class="card third reveal"><h3>AI health research agent</h3><p>Ask questions in plain English and get help organising the information you choose to enter around one clear health concern.</p></article>
-        <article class="card third reveal"><h3>Research-backed answers</h3><p>AI can research the symptom or condition topic and translate PubMed or NICE-style source context into clearer language.</p></article>
+        <article class="card third reveal"><h3>Research-backed answers</h3><p>AI can research the symptom or condition topic and translate source-backed research context into clearer language.</p></article>
         <article class="card third reveal"><h3>Guided symptom journaling</h3><p>Answer one focused question at a time so the app can build a clearer picture without long forms or diagnostic claims.</p></article>
         <article class="card third reveal"><h3>Clinician-ready reports</h3><p>Turn the conversation, relevant research context, and monitoring suggestions into a saved report you can use for a better discussion.</p></article>
         <article class="card third reveal"><h3>AI-assisted monitoring</h3><p>Create self-tracking fields such as severity, duration, frequency, triggers, and day-to-day impact, then review patterns over time.</p></article>
@@ -1392,7 +1486,7 @@
         </div>
         <article class="card step-card third reveal"><span class="step-number">1</span><h3>Start with a normal sentence</h3><p>Write something like "I keep getting headaches" or "I want to track lower back pain."</p></article>
         <article class="card step-card third reveal"><span class="step-number">2</span><h3>Answer one guided question</h3><p>MyHealthPilot helps structure the basics without long forms or diagnosis-style claims.</p></article>
-        <article class="card step-card third reveal"><span class="step-number">3</span><h3>Review AI research context</h3><p>Where useful, the app can translate relevant PubMed or NICE-style source context into plain English with visible links.</p></article>
+        <article class="card step-card third reveal"><span class="step-number">3</span><h3>Review AI research context</h3><p>Where useful, the app can translate relevant source-backed research context into plain English with visible links.</p></article>
         <article class="card step-card reveal"><span class="step-number">4</span><h3>Generate a clinician-ready report</h3><p>Save a clearer summary of what you entered, relevant research context, what to monitor, and safety boundaries.</p></article>
         <article class="card step-card reveal"><span class="step-number">5</span><h3>Monitor and ask follow-ups</h3><p>Use check-ins to record patterns over time, then ask follow-up questions from the saved context.</p></article>
         <article class="card wide contact-card reveal">
@@ -1437,7 +1531,7 @@
         <div class="section-head reveal">
           <div class="mini-label">Research translation</div>
           <h2 id="research-title">AI research translation with visible sources.</h2>
-          <p>MyHealthPilot can use AI to research the symptom or condition topic you ask about, then translate relevant source-backed context into plain English. Where research-backed information is used, it may show visible links such as PubMed or NICE-style guidance. The aim is to help users understand context, not make medical decisions.</p>
+          <p>MyHealthPilot can use AI to research the symptom or condition topic you ask about, then translate relevant source-backed context into plain English. Where research-backed information is used, it may show visible source links. The aim is to help users understand context, not make medical decisions.</p>
         </div>
         <article class="card reveal"><h3>Source-backed summaries</h3><p>Summaries are written to explain what the research context says in clearer language while avoiding diagnostic certainty or treatment decisions.</p></article>
         <aside class="card safety-card reveal" aria-label="Research safety note"><h3>Research summaries are for education and organisation.</h3><p>Diagnosis, treatment, and medical decisions should be discussed with a qualified professional.</p></aside>
@@ -1455,7 +1549,7 @@
             <tbody>
               <tr><td data-label="Random symptom searching">Scattered tabs and screenshots</td><td data-label="MyHealthPilot">AI-organised notes</td></tr>
               <tr><td data-label="Random symptom searching">Often increases anxiety</td><td data-label="MyHealthPilot">One guided question at a time</td></tr>
-              <tr><td data-label="Random symptom searching">Hard to verify context</td><td data-label="MyHealthPilot">Visible PubMed and NICE-style source links where used</td></tr>
+              <tr><td data-label="Random symptom searching">Hard to verify context</td><td data-label="MyHealthPilot">Visible source links where used</td></tr>
               <tr><td data-label="Random symptom searching">Hard to save context</td><td data-label="MyHealthPilot">Clinician-ready saved reports</td></tr>
               <tr><td data-label="Random symptom searching">Not built around your timeline</td><td data-label="MyHealthPilot">AI-assisted monitoring plans</td></tr>
               <tr><td data-label="Random symptom searching">Easy to forget details</td><td data-label="MyHealthPilot">Plain-English research summaries and appointment preparation</td></tr>
@@ -1496,7 +1590,7 @@
           <details><summary>Can MyHealthPilot help before a GP appointment?</summary><p>Yes. MyHealthPilot can help people organise health concerns, research relevant context, track patterns over time, and prepare clearer reports before speaking to a GP or other qualified professional.</p></details>
           <details><summary>What can I track in MyHealthPilot?</summary><p>You can track self-entered notes such as severity, duration, frequency, triggers, relieving factors, sleep, activity, medication use, impact on daily activities, related symptoms, and changes over time.</p></details>
           <details><summary>Does MyHealthPilot provide medical advice?</summary><p>MyHealthPilot provides AI-assisted organisation, journaling, monitoring, and research translation support. Diagnosis, treatment, and medical decisions should be discussed with a qualified professional.</p></details>
-          <details><summary>How does MyHealthPilot use research sources?</summary><p>Where research-backed information is used, MyHealthPilot may research the symptom or condition topic and show visible source links such as PubMed or NICE-style guidance so users can review the context.</p></details>
+          <details><summary>How does MyHealthPilot use research sources?</summary><p>Where research-backed information is used, MyHealthPilot may research the symptom or condition topic and show visible source links so users can review the context.</p></details>
           <details><summary>Is MyHealthPilot free?</summary><p>MyHealthPilot is currently available to download. Future features or access options may change.</p></details>
           <details><summary>Who is MyHealthPilot for?</summary><p>MyHealthPilot is for people who want a calmer AI-supported way to organise symptoms, track patterns, save health notes, understand research context, and prepare for conversations with health professionals.</p></details>
           <details><summary>What should I do in an emergency?</summary><p>Do not rely on MyHealthPilot in an emergency. Contact local emergency services or seek urgent professional medical help for urgent, severe, or rapidly worsening symptoms.</p></details>

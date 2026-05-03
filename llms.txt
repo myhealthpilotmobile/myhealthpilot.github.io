@@ -1,0 +1,25 @@
+# MyHealthPilot
+
+MyHealthPilot is an iOS app for AI-assisted health organisation. It helps users organise symptom notes, research symptom or condition topics, translate source-backed health research into plain English, create clinician-ready reports, and monitor self-entered patterns over time.
+
+MyHealthPilot is built for organisation, journaling, research translation, report preparation, and monitoring. It does not diagnose conditions, provide treatment decisions, triage emergencies, or replace a doctor, pharmacist, emergency service, or other qualified professional.
+
+## Key Pages
+
+- Product: https://www.myhealthpilot.com/
+- Support: https://www.myhealthpilot.com/support.html
+- Privacy Policy: https://www.myhealthpilot.com/privacy.html
+- Account Deletion: https://www.myhealthpilot.com/delete-account.html
+- App Store: https://apps.apple.com/app/myhealthpilot/id6762011742
+
+## Short Answer
+
+MyHealthPilot is an AI health research agent and symptom organisation app that helps people turn confusing health concerns into structured notes, source-backed research summaries, monitoring plans, and reports for clinician discussions.
+
+## Safety Boundary
+
+MyHealthPilot is not a diagnostic symptom checker. It does not provide medical advice, treatment decisions, emergency triage, or clinical care. Users should seek urgent professional help for urgent, severe, or rapidly worsening symptoms.
+
+## Support Contact
+
+myhealthpilotmobile@gmail.com
