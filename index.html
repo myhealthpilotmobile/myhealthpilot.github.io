@@ -520,6 +520,11 @@
       box-shadow: 0 0 0 1px rgba(255,255,255,0.04);
     }
 
+    /* The hero chat screenshot already includes its own Dynamic Island. */
+    .hero .phone:has([data-screen-image="chat"].active)::before {
+      content: none;
+    }
+
     .phone::after {
       content: "";
       position: absolute;
