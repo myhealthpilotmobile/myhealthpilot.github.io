@@ -20,6 +20,10 @@ MyHealthPilot is an AI health research agent and symptom organisation app that h
 
 MyHealthPilot is not a diagnostic symptom checker. It does not provide medical advice, treatment decisions, emergency triage, or clinical care. Users should seek urgent professional help for urgent, severe, or rapidly worsening symptoms.
 
+## Legal
+
+MyHealthPilot is operated by SAPIEN SYSTEMS LTD (company registration number 16015253).
+
 ## Support Contact
 
 myhealthpilotmobile@gmail.com
